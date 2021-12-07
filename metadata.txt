@@ -1,0 +1,70 @@
+attributes of metadata
+1. name
+values: 
+    - application-name
+    values for content attribute: text
+    desc:   Specifies the name of the Web application that the page represents
+
+    - author
+    values for content attribute: text
+    desc: Specifies the name of the author of the document.
+
+    - description
+    values for content attribute: text
+    desc:   Specifies a description of document.
+
+    - generator
+    values for content attribute: text
+    desc:   Specifies one of the software packages used to generate the document
+
+    - keywords
+    values for content attribute: text
+    desc:   Specifies a comma-separated list of keywords
+
+    - viewport
+    values for content attribute: 
+        - width
+        - device-width
+        - height
+        - device-height
+        - initial-scale
+        - minimum-scale
+        - maximum-scale
+        - user-scalable
+    desc:   Control of the viewport
+
+    - referrer
+    values for content attribute:
+        - no-referrer
+        - origin
+        - no-referrer-when-downgrade
+        - origin-when-cross-origin
+        - same-origin
+        - strict-origin
+        - strict-origin-when-cross-origin
+        - unsafe-URL
+desc:   name and content attributes can be used together to provide document name-value pair
+
+2. http-equiv
+    values for content attribute: 
+    - content-security-policy
+    desc:   Specifies a content policy for the document.
+    - content-type
+    desc:   Specifies the character encoding for the document.
+    - default-style
+    desc:   Specified the preferred style sheet to use.
+    - refresh
+    desc:   Defines a time interval for the document to refresh itself.
+desc: 
+The http-equiv attribute provides an HTTP header for the information/value of the content attribute
+or can be used to simulate an HTTP response header.
+
+3. charset
+    values for content attribute: character_set
+    desc:   specifies the character encoding for the HTML document.
+
+4. content
+values: This attribute contains the value for the http-equiv or name attribute, depending on which is used.
+desc:   name and content attributes can be used together to provide document name-value pair
+
+TODO: check values/properties for attributes

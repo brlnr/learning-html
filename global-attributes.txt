@@ -1,0 +1,67 @@
+1. accesskey
+vaule:  shortcut key
+desc:   Specifies a keyboard shortcut to activate or focus the element.
+
+2. class
+vaule:  classname
+desc:   Assigns a class name or space-separated list of class names to an element.
+
+3. contenteditable
+vaule:  true, false
+desc:   Indicates whether the content of an element is editable by the user or not.
+
+4. contextmenu
+vaule:  menu-id
+desc:   Specifies a context menu for an element. A context menu is a menu that appears when the user clicks the right mouse button on the element.
+
+5. data-*
+vaule:  data
+desc:   Specified on any HTML element, to store custom data specific to the page.
+
+6. dir
+vaule:  ltr, rtl
+desc:   Specifies the base direction of directionality of the element's text.
+
+7. draggable
+vaule:  true, false
+desc:   Specifies whether an element is draggable or not.
+
+8. dropzone
+vaule:  copy, move, link
+desc:   Specifies whether the dragged data is copied, moved, or linked, when dropped.
+
+9. hidden
+vaule:  hidden
+desc:   Indicates that the element is not yet, or is no longer, relevant.
+
+10. id
+vaule:  name
+desc:   Specifies a unique identifier (ID) for an element which must be unique in the whole document.
+
+11. lang
+vaule:  language-code
+desc:   Specifies the primary language for the element's text content.
+
+12. spellcheck
+vaule:  true, false
+desc:   Specifies whether the element may be checked for spelling errors or not.
+
+13. style
+vaule:  style
+desc:   Specifies inline style information for an element.
+
+14. tabindex
+vaule:  number
+desc:   Specifies the tabbing order of an element.
+
+15. title
+value:  text
+desc:   Provides advisory information related to the element. It would be appropriate for a tooltip.
+
+16. translate
+value:  yes, no
+desc:   Specifies whether the text content of an element should be translated or not.
+
+17. xml:lang
+value:  language-code
+desc:   Specifies the primary language for the element's text content, in XHTML documents.
