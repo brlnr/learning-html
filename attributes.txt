@@ -1,3 +1,4 @@
+Global Attributes
 1. accesskey
 vaule:  shortcut key
 desc:   Specifies a keyboard shortcut to activate or focus the element.
@@ -65,3 +66,25 @@ desc:   Specifies whether the text content of an element should be translated or
 17. xml:lang
 value:  language-code
 desc:   Specifies the primary language for the element's text content, in XHTML documents.
+
+Window Event Attributes
+- onafterprint
+- onbeforeprint
+- onbeforeunload
+- onblur
+- onerror
+- onfocus
+- onhashchange
+- onlanguagechange (experimental)
+- onload
+- onmessage
+- onoffline
+- ononline
+- onpopstate
+- onredo
+- onresize
+- onstorage
+- onundo
+- onunload
+- onpagehide
+- onpageshow
