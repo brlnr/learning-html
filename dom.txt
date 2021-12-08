@@ -1,0 +1,52 @@
+Document Object Model (DOM)
+When the browser reads HTML code, whenever it encounters an HTML element like html, body, div etc., 
+it creates a JavaScript object called a Node. Eventually, all HTML elements will be converted to JavaScript objects.
+
+A DOM node doesn’t always have to be an HTML element. 
+When the browser creates a DOM tree, it also saves things like comments, attributes, text as separate nodes in the tree.
+
+JavaScript doesn’t understand what DOM is, it is not part of the JavaScript specifications. 
+DOM is a high-level Web API provided by the browser to efficiently render a webpage and expose it publically 
+for the developer to dynamically manipulate DOM elements for various purposes.
+
+<html> -> HTMLHtmlElement
+
+    <head> -> HTMLHeadElement
+
+        <title> -> HTMLTitleElement
+
+        <link> -> HTMLLinkElement
+
+    <body> -> HTMLBodyElement
+
+        <div> -> HTMLDivElement
+
+            <h1> -> HTMLHeadingElement
+
+                (Text Node)
+
+            <p> -> HTMLParagraphElement
+
+                (Text Node)
+
+        <script> -> HTMLScriptElement
+
+
+
+Styling
+
+After constructing the DOM, the browser reads CSS from all the sources (external, embedded, inline, user-agent, etc.) 
+and construct a CSSOM. CSSOM stands for CSS Object Model which is a Tree Like structure just like DOM.
+Each node in this tree contains CSS style information that will be applied to DOM elements that it target (specified by the selector). 
+CSSOM, however, does not contain DOM elements which can’t be printed on the screen like <meta>, <script>, <title> etc.
+As we know, most of the browser comes with its own stylesheet which is called as user agent stylesheet, the browser first computes 
+final CSS properties for DOM element by overriding user agent styles with CSS provided by the developer properties (using specificity rules) 
+and then construct a node.
+
+CSSOM -> DOM
+
+DOM + CSSOM-> Render Tree
+
+Since in CSSOM, p element situated inside div has display:none; style set on it, it and its children won’t be present in Render-Tree, 
+since it occupies no space on the screen. However, if you have elements with visibility:hidden or opacity:0, 
+they will occupy space on the screen hence they will be present in the Render-Tree.
