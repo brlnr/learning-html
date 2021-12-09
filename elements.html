@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+</head>
+<body>
+    
+    <!--1-->
+    <a href="">Link</a>
+
+    <!--2-->
+    <p>This is <abbr title="Hyper Text Markup Language">HTML</abbr> tag </p>
+
+    <!--3-->    
+    <address>
+        <p>Street, City, 10-100, Country</p>
+        <a href="mailto:mail@mail.com">mail@mail.com</a><br>
+        <a href="tel:+00000000000">+00000000000</a>
+    </address>
+
+    <!--4-->    
+    <map name="square">
+        <area shape="rect" coords="0,100,100,0" href="/blue.html" target="_blank" alt="Square">
+        <area shape="rect" coords="300,300,400,400" href="/green.html" target="_blank" alt="Square">
+    </map>
+    <img usemap="#square" src="square.png" alt="Square">
+    
+    <!--5-->   
+    <article>
+        <h2>Title</h2>
+        <p>Content</p>
+    </article>
+
+    <!--6-->
+    <aside>
+        <p>Aside content</p>
+    </aside>
+
+    <!--7-->
+    <figure>
+        <figcaption>Some music</figcaption>
+        <audio controls src="music.mp3">
+            Error content
+        </audio>
+    </figure>
+
+    <!--8-->
+    <p>this is <b>bold</b> text</p>
+
+    <!--9-->
+    <base href="https://www.example.com/">
+
+    <!--10-->
+    <p><bdi class="name">Name Surnamen</bdi>: 1st place</p>
+
+    <!--11-->
+    <p>Some text with <bdo dir="ltr">bdo</bdo>tag</p>
+
+    <!--12-->
+    <figure>
+        <blockquote cite="https://example.html">
+            <p>some content</p>
+        </blockquote>
+    </figure>
+
+    <!--13-->
+    <p>texttexttext<br>texttext</p>
+
+    <!--14-->
+    <button type="button">Button</button>
+
+    <!--15-->
+    <canvas id="canvas" width="200px" height="200px"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'green';
+        ctx.fillRect(10, 10, 100, 100);
+    </script>
+
+    <!--16-->
+    <caption>caption text</caption>
+
+    <!--17-->
+    <figure>
+        <blockquote>
+            <p>Some text here</p>
+        </blockquote>
+        <figcaption>This is from <cite><a href="http://example.html">Example</a></cite> by Grzegorz Berliński</figcaption>
+    </figure>
+
+    <!--18-->
+    <p>Some code here: <code>let a = 2;</code></p>
+
+    <!--19-->
+    <table>
+        <caption>Table with data</caption>
+        <colgroup>
+            <col>
+            <col span="2" class="object1">
+            <col span="2" class="object2">
+        </colgroup>
+        <tr>
+            <td> </td>
+            <th scope="col">item1</th>
+            <th scope="col">item3</th>
+            <th scope="col">item5</th>
+            <th scope="col">item7</th>
+        </tr>
+        <tr>
+            <th scope="row">Property</th>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <!--20-->
+    <data value="398">Productname</data>
+
+    <!--21-->
+    <label for="colors-choice">Choose a color:</label>
+    <input list="colors" id="colors-choice" name="colors-choice" />
+
+    <datalist id="colors">
+        <option value="red">
+        <option value="blue">
+        <option value="green">
+    </datalist>
+
+
+
+    <!--22-->
+    <p>Definitions</p>
+
+    <dl>
+        <dt>Some word</dt>
+        <dd>Definition here</dd>
+    </dl>
+
+
+    <!--23-->
+    <del>code deleted</del><ins>new code</ins>
+
+
+    <!--24-->
+    <details>
+        <summary>Details</summary>
+        Some details here
+    </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
